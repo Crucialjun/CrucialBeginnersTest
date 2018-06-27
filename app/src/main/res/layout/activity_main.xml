@@ -395,24 +395,32 @@
                 android:layout_marginStart="16dp">
 
                 <RadioButton
+                    android:id="@+id/radio5A"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/answer5A"
+                    android:onClick="onRadioClick5"
                     />
                 <RadioButton
+                    android:id="@+id/radio5B"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/answer5B"
+                    android:onClick="onRadioClick5"
                     />
                 <RadioButton
+                    android:id="@+id/radio5C"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/answer5C"
+                    android:onClick="onRadioClick5"
                     />
                 <RadioButton
+                    android:id="@+id/radio5D"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/answer5D"
+                    android:onClick="onRadioClick5"
                     />
 
 
@@ -460,24 +468,32 @@
                 android:layout_marginStart="16dp">
 
                 <RadioButton
+                    android:id="@+id/radio6A"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/answer6A"
+                    android:onClick="onRadioClick6"
                     />
                 <RadioButton
+                    android:id="@+id/radio6B"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/answer6B"
+                    android:onClick="onRadioClick6"
                     />
                 <RadioButton
+                    android:id="@+id/radio6C"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/answer6C"
+                    android:onClick="onRadioClick6"
                     />
                 <RadioButton
+                    android:id="@+id/radio6D"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/answer6D"
+                    android:onClick="onRadioClick6"
                     />
 
 
