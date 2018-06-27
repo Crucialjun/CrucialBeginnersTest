@@ -481,6 +481,199 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     * Check Correct answer for number seven
+     * @param view
+     */
+    public void  onRadioClick8(View view){
+        RadioGroup radioGroup8 = findViewById(R.id.radioGroup8);
+        RadioButton radiobox8A = findViewById(R.id.radio8A);
+        RadioButton radiobox8B = findViewById(R.id.radio8B);
+        RadioButton radiobox8C = findViewById(R.id.radio8C);
+        RadioButton radiobox8D = findViewById(R.id.radio8D);
+
+        if (radiobox8D.isChecked()) {
+            Toast correctToast = Toast.makeText(this, "Correct Answer", Toast.LENGTH_SHORT);
+            correctToast.show();
+
+            //Loop through the RadioGroup disabling the radio buttons for user not to change answer after selecting
+
+            for (int i = 0; i < radioGroup8.getChildCount(); i++) {
+                radioGroup8.getChildAt(i).setEnabled(false);
+            }
+
+            score += 1;
+
+        } else if (radiobox8A.isChecked()){
+            Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is D", Toast.LENGTH_SHORT);
+
+            wrongToast.show();
+
+            //Disable RadioGroup for user not to change answer after selecting
+
+            for (int i = 0; i < radioGroup8.getChildCount(); i++) {
+                radioGroup8.getChildAt(i).setEnabled(false);
+            }
+
+
+        }else if(radiobox8B.isChecked()){
+            Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is D", Toast.LENGTH_SHORT);
+
+            wrongToast.show();
+
+            //Disable RadioGroup for user not to change answer after selecting
+
+            for (int i = 0; i < radioGroup8.getChildCount(); i++) {
+                radioGroup8.getChildAt(i).setEnabled(false);
+            }
+
+
+
+        }else if(radiobox8C.isChecked()){
+            Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is D", Toast.LENGTH_SHORT);
+
+            wrongToast.show();
+
+            //Disable RadioGroup for user not to change answer after selecting
+
+            for (int i = 0; i < radioGroup8.getChildCount(); i++) {
+                radioGroup8.getChildAt(i).setEnabled(false);
+            }
+
+
+        }
+
+    }
+
+    /**
+     * Check Correct answer for number seven
+     * @param view
+     */
+    public void  onRadioClick9(View view){
+        RadioGroup radioGroup9 = findViewById(R.id.radioGroup9);
+        RadioButton radiobox9A = findViewById(R.id.radio9A);
+        RadioButton radiobox9B = findViewById(R.id.radio9B);
+        RadioButton radiobox9C = findViewById(R.id.radio9C);
+        RadioButton radiobox9D = findViewById(R.id.radio9D);
+
+        if (radiobox9C.isChecked()) {
+            Toast correctToast = Toast.makeText(this, "Correct Answer", Toast.LENGTH_SHORT);
+            correctToast.show();
+
+            //Loop through the RadioGroup disabling the radio buttons for user not to change answer after selecting
+
+            for (int i = 0; i < radioGroup9.getChildCount(); i++) {
+                radioGroup9.getChildAt(i).setEnabled(false);
+            }
+
+            score += 1;
+
+        } else if (radiobox9A.isChecked()){
+            Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is C", Toast.LENGTH_SHORT);
+
+            wrongToast.show();
+
+            //Disable RadioGroup for user not to change answer after selecting
+
+            for (int i = 0; i < radioGroup9.getChildCount(); i++) {
+                radioGroup9.getChildAt(i).setEnabled(false);
+            }
+
+
+        }else if(radiobox9B.isChecked()){
+            Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is C", Toast.LENGTH_SHORT);
+
+            wrongToast.show();
+
+            //Disable RadioGroup for user not to change answer after selecting
+
+            for (int i = 0; i < radioGroup9.getChildCount(); i++) {
+                radioGroup9.getChildAt(i).setEnabled(false);
+            }
+
+
+
+        }else if(radiobox9D.isChecked()){
+            Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is C", Toast.LENGTH_SHORT);
+
+            wrongToast.show();
+
+            //Disable RadioGroup for user not to change answer after selecting
+
+            for (int i = 0; i < radioGroup9.getChildCount(); i++) {
+                radioGroup9.getChildAt(i).setEnabled(false);
+            }
+
+
+        }
+
+    }
+
+
+    /**
+     * Check Correct answer for number seven
+     * @param view
+     */
+    public void  onRadioClick10(View view){
+        RadioGroup radioGroup10 = findViewById(R.id.radioGroup10);
+        RadioButton radiobox10A = findViewById(R.id.radio10A);
+        RadioButton radiobox10B = findViewById(R.id.radio10B);
+        RadioButton radiobox10C = findViewById(R.id.radio10C);
+        RadioButton radiobox10D = findViewById(R.id.radio10D);
+
+        if (radiobox10D.isChecked()) {
+            Toast correctToast = Toast.makeText(this, "Correct Answer", Toast.LENGTH_SHORT);
+            correctToast.show();
+
+            //Loop through the RadioGroup disabling the radio buttons for user not to change answer after selecting
+
+            for (int i = 0; i < radioGroup10.getChildCount(); i++) {
+                radioGroup10.getChildAt(i).setEnabled(false);
+            }
+
+            score += 1;
+
+        } else if (radiobox10A.isChecked()){
+            Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is D", Toast.LENGTH_SHORT);
+
+            wrongToast.show();
+
+            //Disable RadioGroup for user not to change answer after selecting
+
+            for (int i = 0; i < radioGroup10.getChildCount(); i++) {
+                radioGroup10.getChildAt(i).setEnabled(false);
+            }
+
+
+        }else if(radiobox10B.isChecked()){
+            Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is D", Toast.LENGTH_SHORT);
+
+            wrongToast.show();
+
+            //Disable RadioGroup for user not to change answer after selecting
+
+            for (int i = 0; i < radioGroup10.getChildCount(); i++) {
+                radioGroup10.getChildAt(i).setEnabled(false);
+            }
+
+
+
+        }else if(radiobox10C.isChecked()){
+            Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is D", Toast.LENGTH_SHORT);
+
+            wrongToast.show();
+
+            //Disable RadioGroup for user not to change answer after selecting
+
+            for (int i = 0; i < radioGroup10.getChildCount(); i++) {
+                radioGroup10.getChildAt(i).setEnabled(false);
+            }
+
+
+        }
+
+    }
+
+    /**
      * This Method is called when the submit button is clicked
      * @param view
      */
@@ -599,15 +792,23 @@ public class MainActivity extends AppCompatActivity {
         }
 
         radioGroup7.clearCheck();
-        for (int i = 0; i < radioGroup6.getChildCount(); i++) {
-            radioGroup6.getChildAt(i).setEnabled(true);
+        for (int i = 0; i < radioGroup7.getChildCount(); i++) {
+            radioGroup7.getChildAt(i).setEnabled(true);
         }
 
         radioGroup8.clearCheck();
-        radioGroup8.isEnabled();
+        for (int i = 0; i < radioGroup8.getChildCount(); i++) {
+            radioGroup8.getChildAt(i).setEnabled(true);
+        }
+
         radioGroup9.clearCheck();
-        radioGroup9.isEnabled();
+        for (int i = 0; i < radioGroup9.getChildCount(); i++) {
+            radioGroup9.getChildAt(i).setEnabled(true);
+        }
+
         radioGroup10.clearCheck();
-        radioGroup10.isEnabled();
+        for (int i = 0; i < radioGroup10.getChildCount(); i++) {
+            radioGroup10.getChildAt(i).setEnabled(true);
+        }
     }
 }

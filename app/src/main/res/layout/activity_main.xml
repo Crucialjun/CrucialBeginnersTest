@@ -614,24 +614,32 @@
                 android:layout_marginStart="16dp">
 
                 <RadioButton
+                    android:id="@+id/radio8A"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/answer8A"
+                    android:onClick="onRadioClick8"
                     />
                 <RadioButton
+                    android:id="@+id/radio8B"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/answer8B"
+                    android:onClick="onRadioClick8"
                     />
                 <RadioButton
+                    android:id="@+id/radio8C"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/answer8C"
+                    android:onClick="onRadioClick8"
                     />
                 <RadioButton
+                    android:id="@+id/radio8D"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/answer8D"
+                    android:onClick="onRadioClick8"
                     />
 
 
@@ -679,24 +687,32 @@
                 android:layout_marginStart="16dp">
 
                 <RadioButton
+                    android:id="@+id/radio9A"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/answer9A"
+                    android:onClick="onRadioClick9"
                     />
                 <RadioButton
+                    android:id="@+id/radio9B"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/answer9B"
+                    android:onClick="onRadioClick9"
                     />
                 <RadioButton
+                    android:id="@+id/radio9C"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/answer9C"
+                    android:onClick="onRadioClick9"
                     />
                 <RadioButton
+                    android:id="@+id/radio9D"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/answer9D"
+                    android:onClick="onRadioClick9"
                     />
 
 
@@ -744,24 +760,32 @@
                 android:layout_marginStart="16dp">
 
                 <RadioButton
+                    android:id="@+id/radio10A"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/answer10A"
+                    android:onClick="onRadioClick10"
                     />
                 <RadioButton
+                    android:id="@+id/radio10B"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/answer10B"
+                    android:onClick="onRadioClick10"
                     />
                 <RadioButton
+                    android:id="@+id/radio10C"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/answer10C"
+                    android:onClick="onRadioClick10"
                     />
                 <RadioButton
+                    android:id="@+id/radio10D"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/answer10D"
+                    android:onClick="onRadioClick10"
                     />
 
 
