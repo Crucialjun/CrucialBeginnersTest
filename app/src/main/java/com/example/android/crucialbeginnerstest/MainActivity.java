@@ -597,7 +597,7 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < radioGroup6.getChildCount(); i++) {
             radioGroup6.getChildAt(i).setEnabled(true);
         }
-        
+
         radioGroup7.clearCheck();
         for (int i = 0; i < radioGroup6.getChildCount(); i++) {
             radioGroup6.getChildAt(i).setEnabled(true);
