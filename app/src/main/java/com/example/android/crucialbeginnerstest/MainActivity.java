@@ -417,6 +417,70 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     * Check Correct answer for number seven
+     * @param view
+     */
+    public void  onRadioClick7(View view){
+        RadioGroup radioGroup7 = findViewById(R.id.radioGroup7);
+        RadioButton radiobox7A = findViewById(R.id.radio7A);
+        RadioButton radiobox7B = findViewById(R.id.radio7B);
+        RadioButton radiobox7C = findViewById(R.id.radio7C);
+        RadioButton radiobox7D = findViewById(R.id.radio7D);
+
+        if (radiobox7D.isChecked()) {
+            Toast correctToast = Toast.makeText(this, "Correct Answer", Toast.LENGTH_SHORT);
+            correctToast.show();
+
+            //Loop through the RadioGroup disabling the radio buttons for user not to change answer after selecting
+
+            for (int i = 0; i < radioGroup7.getChildCount(); i++) {
+                radioGroup7.getChildAt(i).setEnabled(false);
+            }
+
+            score += 1;
+
+        } else if (radiobox7A.isChecked()){
+            Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is D", Toast.LENGTH_SHORT);
+
+            wrongToast.show();
+
+            //Disable RadioGroup for user not to change answer after selecting
+
+            for (int i = 0; i < radioGroup7.getChildCount(); i++) {
+                radioGroup7.getChildAt(i).setEnabled(false);
+            }
+
+
+        }else if(radiobox7B.isChecked()){
+            Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is D", Toast.LENGTH_SHORT);
+
+            wrongToast.show();
+
+            //Disable RadioGroup for user not to change answer after selecting
+
+            for (int i = 0; i < radioGroup7.getChildCount(); i++) {
+                radioGroup7.getChildAt(i).setEnabled(false);
+            }
+
+
+
+        }else if(radiobox7C.isChecked()){
+            Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is D", Toast.LENGTH_SHORT);
+
+            wrongToast.show();
+
+            //Disable RadioGroup for user not to change answer after selecting
+
+            for (int i = 0; i < radioGroup7.getChildCount(); i++) {
+                radioGroup7.getChildAt(i).setEnabled(false);
+            }
+
+
+        }
+
+    }
+
+    /**
      * This Method is called when the submit button is clicked
      * @param view
      */
@@ -535,7 +599,10 @@ public class MainActivity extends AppCompatActivity {
         }
         
         radioGroup7.clearCheck();
-        radioGroup7.isEnabled();
+        for (int i = 0; i < radioGroup6.getChildCount(); i++) {
+            radioGroup6.getChildAt(i).setEnabled(true);
+        }
+
         radioGroup8.clearCheck();
         radioGroup8.isEnabled();
         radioGroup9.clearCheck();

@@ -541,24 +541,32 @@
                 android:layout_marginStart="16dp">
 
                 <RadioButton
+                    android:id="@+id/radio7A"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/answer7A"
+                    android:onClick="onRadioClick7"
                     />
                 <RadioButton
+                    android:id="@+id/radio7B"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/answer7B"
+                    android:onClick="onRadioClick7"
                     />
                 <RadioButton
+                    android:id="@+id/radio7C"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/answer7C"
+                    android:onClick="onRadioClick7"
                     />
                 <RadioButton
+                    android:id="@+id/radio7D"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/answer7D"
+                    android:onClick="onRadioClick7"
                     />
 
 
