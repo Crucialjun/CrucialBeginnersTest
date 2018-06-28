@@ -1,7 +1,5 @@
 package com.example.android.crucialbeginnerstest;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -13,6 +11,8 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,9 +30,10 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Check Correct answer for number one
-     * @param view
+     *
+     *
      */
-    public void  onRadioClick1(View view){
+    public void onRadioClick1(View view) {
         RadioGroup radioGroup1 = findViewById(R.id.radioGroup1);
         RadioButton radiobox1A = findViewById(R.id.radio1A);
         RadioButton radiobox1B = findViewById(R.id.radio1B);
@@ -52,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
             score += 1;
 
-        } else if (radiobox1B.isChecked()){
+        } else if (radiobox1B.isChecked()) {
             Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is A", Toast.LENGTH_SHORT);
 
             wrongToast.show();
@@ -64,9 +65,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
-
-
-        }else if(radiobox1C.isChecked()){
+        } else if (radiobox1C.isChecked()) {
             Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is A", Toast.LENGTH_SHORT);
 
             wrongToast.show();
@@ -78,9 +77,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
-
-
-        }else if(radiobox1D.isChecked()){
+        } else if (radiobox1D.isChecked()) {
             Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is A", Toast.LENGTH_SHORT);
 
             wrongToast.show();
@@ -90,7 +87,6 @@ public class MainActivity extends AppCompatActivity {
             for (int i = 0; i < radioGroup1.getChildCount(); i++) {
                 radioGroup1.getChildAt(i).setEnabled(false);
             }
-
 
 
         }
@@ -99,9 +95,9 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Check Correct answer for number two
-     * @param view
+     *
      */
-    public void  onRadioClick2(View view){
+    public void onRadioClick2(View view) {
         RadioGroup radioGroup2 = findViewById(R.id.radioGroup2);
         RadioButton radiobox2A = findViewById(R.id.radio2A);
         RadioButton radiobox2B = findViewById(R.id.radio2B);
@@ -120,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
 
             score += 1;
 
-        } else if (radiobox2B.isChecked()){
+        } else if (radiobox2B.isChecked()) {
             Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is C", Toast.LENGTH_SHORT);
 
             wrongToast.show();
@@ -132,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
-        }else if(radiobox2A.isChecked()){
+        } else if (radiobox2A.isChecked()) {
             Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is C", Toast.LENGTH_SHORT);
 
             wrongToast.show();
@@ -144,8 +140,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
-
-        }else if(radiobox2D.isChecked()){
+        } else if (radiobox2D.isChecked()) {
             Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is C", Toast.LENGTH_SHORT);
 
             wrongToast.show();
@@ -163,9 +158,9 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Check Correct answer for number three
-     * @param view
+     *
      */
-    public void  onClick3(View view) {
+    public void onClick3(View view) {
         CheckBox check1 = findViewById(R.id.check1);
         CheckBox check2 = findViewById(R.id.check2);
         CheckBox check3 = findViewById(R.id.check3);
@@ -180,7 +175,7 @@ public class MainActivity extends AppCompatActivity {
 
         } else if (check4.isChecked()) {
 
-            Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is D", Toast.LENGTH_SHORT);
+            Toast wrongToast = Toast.makeText(this, "Wrong Answer", Toast.LENGTH_SHORT);
 
             wrongToast.show();
 
@@ -189,7 +184,7 @@ public class MainActivity extends AppCompatActivity {
             check3.setEnabled(false);
             check4.setEnabled(false);
 
-        }else{
+        } else {
             Toast almostToast = Toast.makeText(this, "Almost There", Toast.LENGTH_SHORT);
             almostToast.show();
         }
@@ -197,9 +192,9 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Check Correct answer for number four
-     * @param view
+     *
      */
-    public void  onRadioClick4(View view){
+    public void onRadioClick4(View view) {
         RadioGroup radioGroup4 = findViewById(R.id.radioGroup4);
         RadioButton radiobox4A = findViewById(R.id.radio4A);
         RadioButton radiobox4B = findViewById(R.id.radio4B);
@@ -218,7 +213,7 @@ public class MainActivity extends AppCompatActivity {
 
             score += 1;
 
-        } else if (radiobox4B.isChecked()){
+        } else if (radiobox4B.isChecked()) {
             Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is A", Toast.LENGTH_SHORT);
 
             wrongToast.show();
@@ -230,7 +225,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
-        }else if(radiobox4C.isChecked()){
+        } else if (radiobox4C.isChecked()) {
             Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is A", Toast.LENGTH_SHORT);
 
             wrongToast.show();
@@ -242,8 +237,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
-
-        }else if(radiobox4D.isChecked()){
+        } else if (radiobox4D.isChecked()) {
             Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is A", Toast.LENGTH_SHORT);
 
             wrongToast.show();
@@ -261,9 +255,9 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Check Correct answer for number five
-     * @param view
+     *
      */
-    public void  onRadioClick5(View view){
+    public void onRadioClick5(View view) {
         RadioGroup radioGroup5 = findViewById(R.id.radioGroup5);
         RadioButton radiobox5A = findViewById(R.id.radio5A);
         RadioButton radiobox5B = findViewById(R.id.radio5B);
@@ -282,7 +276,7 @@ public class MainActivity extends AppCompatActivity {
 
             score += 1;
 
-        } else if (radiobox5A.isChecked()){
+        } else if (radiobox5A.isChecked()) {
             Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is D", Toast.LENGTH_SHORT);
 
             wrongToast.show();
@@ -294,7 +288,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
-        }else if(radiobox5B.isChecked()){
+        } else if (radiobox5B.isChecked()) {
             Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is D", Toast.LENGTH_SHORT);
 
             wrongToast.show();
@@ -306,8 +300,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
-
-        }else if(radiobox5C.isChecked()){
+        } else if (radiobox5C.isChecked()) {
             Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is D", Toast.LENGTH_SHORT);
 
             wrongToast.show();
@@ -325,9 +318,9 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Check Correct answer for number six
-     * @param view
+     *
      */
-    public void  onRadioClick6(View view){
+    public void onRadioClick6(View view) {
         RadioGroup radioGroup6 = findViewById(R.id.radioGroup6);
         RadioButton radiobox6A = findViewById(R.id.radio6A);
         RadioButton radiobox6B = findViewById(R.id.radio6B);
@@ -346,7 +339,7 @@ public class MainActivity extends AppCompatActivity {
 
             score += 1;
 
-        } else if (radiobox6A.isChecked()){
+        } else if (radiobox6A.isChecked()) {
             Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is C", Toast.LENGTH_SHORT);
 
             wrongToast.show();
@@ -358,7 +351,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
-        }else if(radiobox6B.isChecked()){
+        } else if (radiobox6B.isChecked()) {
             Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is C", Toast.LENGTH_SHORT);
 
             wrongToast.show();
@@ -370,8 +363,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
-
-        }else if(radiobox6D.isChecked()){
+        } else if (radiobox6D.isChecked()) {
             Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is C", Toast.LENGTH_SHORT);
 
             wrongToast.show();
@@ -389,9 +381,9 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Check Correct answer for number seven
-     * @param view
+     *
      */
-    public void  onRadioClick7(View view){
+    public void onRadioClick7(View view) {
         RadioGroup radioGroup7 = findViewById(R.id.radioGroup7);
         RadioButton radiobox7A = findViewById(R.id.radio7A);
         RadioButton radiobox7B = findViewById(R.id.radio7B);
@@ -410,7 +402,7 @@ public class MainActivity extends AppCompatActivity {
 
             score += 1;
 
-        } else if (radiobox7A.isChecked()){
+        } else if (radiobox7A.isChecked()) {
             Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is D", Toast.LENGTH_SHORT);
 
             wrongToast.show();
@@ -422,7 +414,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
-        }else if(radiobox7B.isChecked()){
+        } else if (radiobox7B.isChecked()) {
             Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is D", Toast.LENGTH_SHORT);
 
             wrongToast.show();
@@ -434,8 +426,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
-
-        }else if(radiobox7C.isChecked()){
+        } else if (radiobox7C.isChecked()) {
             Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is D", Toast.LENGTH_SHORT);
 
             wrongToast.show();
@@ -452,10 +443,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Check Correct answer for number seven
-     * @param view
+     * Check Correct answer for number eight
+     *
      */
-    public void  onRadioClick8(View view){
+    public void onRadioClick8(View view) {
         RadioGroup radioGroup8 = findViewById(R.id.radioGroup8);
         RadioButton radiobox8A = findViewById(R.id.radio8A);
         RadioButton radiobox8B = findViewById(R.id.radio8B);
@@ -474,7 +465,7 @@ public class MainActivity extends AppCompatActivity {
 
             score += 1;
 
-        } else if (radiobox8A.isChecked()){
+        } else if (radiobox8A.isChecked()) {
             Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is D", Toast.LENGTH_SHORT);
 
             wrongToast.show();
@@ -486,7 +477,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
-        }else if(radiobox8B.isChecked()){
+        } else if (radiobox8B.isChecked()) {
             Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is D", Toast.LENGTH_SHORT);
 
             wrongToast.show();
@@ -498,8 +489,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
-
-        }else if(radiobox8C.isChecked()){
+        } else if (radiobox8C.isChecked()) {
             Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is D", Toast.LENGTH_SHORT);
 
             wrongToast.show();
@@ -516,10 +506,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Check Correct answer for number seven
-     * @param view
+     * Check Correct answer for number nine
+     *
      */
-    public void  onRadioClick9(View view){
+    public void onRadioClick9(View view) {
         RadioGroup radioGroup9 = findViewById(R.id.radioGroup9);
         RadioButton radiobox9A = findViewById(R.id.radio9A);
         RadioButton radiobox9B = findViewById(R.id.radio9B);
@@ -538,7 +528,7 @@ public class MainActivity extends AppCompatActivity {
 
             score += 1;
 
-        } else if (radiobox9A.isChecked()){
+        } else if (radiobox9A.isChecked()) {
             Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is C", Toast.LENGTH_SHORT);
 
             wrongToast.show();
@@ -550,7 +540,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
-        }else if(radiobox9B.isChecked()){
+        } else if (radiobox9B.isChecked()) {
             Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is C", Toast.LENGTH_SHORT);
 
             wrongToast.show();
@@ -562,8 +552,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
 
-
-        }else if(radiobox9D.isChecked()){
+        } else if (radiobox9D.isChecked()) {
             Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is C", Toast.LENGTH_SHORT);
 
             wrongToast.show();
@@ -579,76 +568,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
-    /**
-     * Check Correct answer for number seven
-     * @param view
-     */
-    public void  onRadioClick10(View view){
-        RadioGroup radioGroup10 = findViewById(R.id.radioGroup10);
-        RadioButton radiobox10A = findViewById(R.id.radio10A);
-        RadioButton radiobox10B = findViewById(R.id.radio10B);
-        RadioButton radiobox10C = findViewById(R.id.radio10C);
-        RadioButton radiobox10D = findViewById(R.id.radio10D);
-
-        if (radiobox10D.isChecked()) {
-            Toast correctToast = Toast.makeText(this, "Correct Answer", Toast.LENGTH_SHORT);
-            correctToast.show();
-
-            //Loop through the RadioGroup disabling the radio buttons for user not to change answer after selecting
-
-            for (int i = 0; i < radioGroup10.getChildCount(); i++) {
-                radioGroup10.getChildAt(i).setEnabled(false);
-            }
-
-            score += 1;
-
-        } else if (radiobox10A.isChecked()){
-            Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is D", Toast.LENGTH_SHORT);
-
-            wrongToast.show();
-
-            //Disable RadioGroup for user not to change answer after selecting
-
-            for (int i = 0; i < radioGroup10.getChildCount(); i++) {
-                radioGroup10.getChildAt(i).setEnabled(false);
-            }
-
-
-        }else if(radiobox10B.isChecked()){
-            Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is D", Toast.LENGTH_SHORT);
-
-            wrongToast.show();
-
-            //Disable RadioGroup for user not to change answer after selecting
-
-            for (int i = 0; i < radioGroup10.getChildCount(); i++) {
-                radioGroup10.getChildAt(i).setEnabled(false);
-            }
-
-
-
-        }else if(radiobox10C.isChecked()){
-            Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is D", Toast.LENGTH_SHORT);
-
-            wrongToast.show();
-
-            //Disable RadioGroup for user not to change answer after selecting
-
-            for (int i = 0; i < radioGroup10.getChildCount(); i++) {
-                radioGroup10.getChildAt(i).setEnabled(false);
-            }
-
-
-        }
-
-    }
 
     /**
      * This Method is called when the submit button is clicked
-     * @param view
+     *
      */
-    public void SubmitResults(View view){
+    public void SubmitResults(View view) {
+        EditText answer10 = findViewById(R.id.answer10);
+
         EditText name = findViewById(R.id.name);
 
         TextView result = findViewById(R.id.resultsDisplay);
@@ -656,20 +583,23 @@ public class MainActivity extends AppCompatActivity {
         ImageView finalImage = findViewById(R.id.finalImage);
 
 
+        if (answer10.getText().toString().equals("Google")) {
+            score = score + 1;
+        }
+
 
         String messageWin = "Dear " + name.getText() + "\n" + " Congratulation your final score is :" + score;
 
         String messageLost = "Dear " + name.getText() + "\n" + " Sorry your final score is :" + score;
 
 
-
-        if (score < 5){
+        if (score < 5) {
             finalImage.setImageDrawable((getResources().getDrawable(R.drawable.sad)));
             result.setText(messageLost);
 
             customMessage();
 
-        } else if (score >= 5){
+        } else if (score >= 5) {
             finalImage.setImageDrawable((getResources().getDrawable(R.drawable.congratulation)));
             result.setText(messageWin);
 
@@ -682,28 +612,27 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Set a custom Message at a the Bottom
      */
-    public void customMessage(){
+    public void customMessage() {
         TextView info = findViewById(R.id.bottomMessage);
-       EditText Name = findViewById(R.id.name);
+        EditText Name = findViewById(R.id.name);
 
-       String displayMessage = "Thank You " + Name.getText() + "\n" + "for using the app." + "\n" + "Udacity: Students First";
+        String displayMessage = "Thank You " + Name.getText() + "\n" + "for using the app." + "\n" + "Udacity: Students First";
 
         info.setText(displayMessage);
     }
 
     /**
      * This method is called when the share button is clicked
-     * @param view
      *
-     * Shares the final results via email
+     * @param view Shares the final results via email
      */
 
-    public void shareResults(View view){
-        String emailMessage = "I managed " + score + " points on the Audacity Quiz App by Crucialjun";
+    public void shareResults(View view) {
+        String emailMessage = "I managed to attain " + score + " points on the Crucial Beginners Test  by Crucialjun";
 
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
-        intent.putExtra(Intent.EXTRA_SUBJECT, "Results from Udacity quiz App by Crucialjun");
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Results from Crucial Beginners Test by Crucialjun");
         intent.putExtra(Intent.EXTRA_TEXT, emailMessage);
 
         startActivity(intent);
@@ -714,7 +643,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method is called when the reset button is called
      * Resets score and reenables all the radio buttons
-     * @param view
+     *
      */
     public void resetQuiz(View view) {
         RadioGroup radioGroup1 = findViewById(R.id.radioGroup1);
@@ -725,7 +654,6 @@ public class MainActivity extends AppCompatActivity {
         RadioGroup radioGroup7 = findViewById(R.id.radioGroup7);
         RadioGroup radioGroup8 = findViewById(R.id.radioGroup8);
         RadioGroup radioGroup9 = findViewById(R.id.radioGroup9);
-        RadioGroup radioGroup10 = findViewById(R.id.radioGroup10);
 
         CheckBox check1 = findViewById(R.id.check1);
         CheckBox check2 = findViewById(R.id.check2);
@@ -783,27 +711,22 @@ public class MainActivity extends AppCompatActivity {
             radioGroup9.getChildAt(i).setEnabled(true);
         }
 
-        radioGroup10.clearCheck();
-        for (int i = 0; i < radioGroup10.getChildCount(); i++) {
-            radioGroup10.getChildAt(i).setEnabled(true);
-        }
-
 
         //Reset The Checked CheckBoxes
 
-        if(check1.isChecked()){
+        if (check1.isChecked()) {
             check1.setChecked(false);
         }
 
-        if(check2.isChecked()){
+        if (check2.isChecked()) {
             check2.setChecked(false);
         }
 
-        if(check3.isChecked()){
+        if (check3.isChecked()) {
             check3.setChecked(false);
         }
 
-        if(check4.isChecked()){
+        if (check4.isChecked()) {
             check4.setChecked(false);
         }
 
@@ -811,5 +734,9 @@ public class MainActivity extends AppCompatActivity {
         check2.setEnabled(true);
         check3.setEnabled(true);
         check4.setEnabled(true);
+
+        EditText answer10 = findViewById(R.id.answer10);
+
+        answer10.setText("");
     }
 }
