@@ -175,7 +175,7 @@ public class MainActivity extends AppCompatActivity {
 
         } else if (check4.isChecked()) {
 
-            Toast wrongToast = Toast.makeText(this, "Wrong Answer", Toast.LENGTH_SHORT);
+            Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is D", Toast.LENGTH_SHORT);
 
             wrongToast.show();
 
@@ -628,11 +628,11 @@ public class MainActivity extends AppCompatActivity {
      */
 
     public void shareResults(View view) {
-        String emailMessage = "I managed to attain " + score + " points on the Crucial Beginners Test  by Crucialjun";
+        String emailMessage = "I managed " + score + " points on the Audacity Quiz App by Crucialjun";
 
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
-        intent.putExtra(Intent.EXTRA_SUBJECT, "Results from Crucial Beginners Test by Crucialjun");
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Results from Udacity quiz App by Crucialjun");
         intent.putExtra(Intent.EXTRA_TEXT, emailMessage);
 
         startActivity(intent);
