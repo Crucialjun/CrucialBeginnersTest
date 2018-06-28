@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioButton;
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
      * Initialize the global scope variables
      */
     int score = 0;
-    String name = "Nicholas Otieno";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -164,64 +165,34 @@ public class MainActivity extends AppCompatActivity {
      * Check Correct answer for number three
      * @param view
      */
-    public void  onRadioClick3(View view){
-        RadioGroup radioGroup3 = findViewById(R.id.radioGroup3);
-        RadioButton radiobox3A = findViewById(R.id.radio3A);
-        RadioButton radiobox3B = findViewById(R.id.radio3B);
-        RadioButton radiobox3C = findViewById(R.id.radio3C);
-        RadioButton radiobox3D = findViewById(R.id.radio3D);
+    public void  onClick3(View view) {
+        CheckBox check1 = findViewById(R.id.check1);
+        CheckBox check2 = findViewById(R.id.check2);
+        CheckBox check3 = findViewById(R.id.check3);
+        CheckBox check4 = findViewById(R.id.check4);
 
-        if (radiobox3D.isChecked()) {
-            Toast correctToast = Toast.makeText(this, "Correct Answer", Toast.LENGTH_SHORT);
-            correctToast.show();
-
-            //Loop through the RadioGroup disabling the radio buttons for user not to change answer after selecting
-
-            for (int i = 0; i < radioGroup3.getChildCount(); i++) {
-                radioGroup3.getChildAt(i).setEnabled(false);
-            }
+        if (check1.isChecked() && check2.isChecked() && check3.isChecked()) {
 
             score += 1;
 
-        } else if (radiobox3B.isChecked()){
+            Toast correctToast = Toast.makeText(this, "Correct Answer", Toast.LENGTH_SHORT);
+            correctToast.show();
+
+        } else if (check4.isChecked()) {
+
             Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is D", Toast.LENGTH_SHORT);
 
             wrongToast.show();
 
-            //Disable RadioGroup for user not to change answer after selecting
+            check1.setEnabled(false);
+            check2.setEnabled(false);
+            check3.setEnabled(false);
+            check4.setEnabled(false);
 
-            for (int i = 0; i < radioGroup3.getChildCount(); i++) {
-                radioGroup3.getChildAt(i).setEnabled(false);
-            }
-
-
-        }else if(radiobox3A.isChecked()){
-            Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is D", Toast.LENGTH_SHORT);
-
-            wrongToast.show();
-
-            //Disable RadioGroup for user not to change answer after selecting
-
-            for (int i = 0; i < radioGroup3.getChildCount(); i++) {
-                radioGroup3.getChildAt(i).setEnabled(false);
-            }
-
-
-
-        }else if(radiobox3C.isChecked()){
-            Toast wrongToast = Toast.makeText(this, "Wrong Answer, The Correct Answer is D", Toast.LENGTH_SHORT);
-
-            wrongToast.show();
-
-            //Disable RadioGroup for user not to change answer after selecting
-
-            for (int i = 0; i < radioGroup3.getChildCount(); i++) {
-                radioGroup3.getChildAt(i).setEnabled(false);
-            }
-
-
+        }else{
+            Toast almostToast = Toast.makeText(this, "Almost There", Toast.LENGTH_SHORT);
+            almostToast.show();
         }
-
     }
 
     /**
@@ -678,15 +649,17 @@ public class MainActivity extends AppCompatActivity {
      * @param view
      */
     public void SubmitResults(View view){
-        //EditText name = findViewById(R.id.name);
+        EditText name = findViewById(R.id.name);
 
         TextView result = findViewById(R.id.resultsDisplay);
 
         ImageView finalImage = findViewById(R.id.finalImage);
 
-        String messageWin = "Dear " + name + "\n" + " Congratulation your final score is :" + score;
 
-        String messageLost = "Dear " + name + "\n" + " Sorry your final score is :" + score;
+
+        String messageWin = "Dear " + name.getText() + "\n" + " Congratulation your final score is :" + score;
+
+        String messageLost = "Dear " + name.getText() + "\n" + " Sorry your final score is :" + score;
 
 
 
@@ -694,9 +667,13 @@ public class MainActivity extends AppCompatActivity {
             finalImage.setImageDrawable((getResources().getDrawable(R.drawable.sad)));
             result.setText(messageLost);
 
+            customMessage();
+
         } else if (score >= 5){
             finalImage.setImageDrawable((getResources().getDrawable(R.drawable.congratulation)));
             result.setText(messageWin);
+
+            customMessage();
         }
 
 
@@ -705,14 +682,14 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Set a custom Message at a the Bottom
      */
-//    public void customMessage(){
-//        TextView info = findViewById(R.id.bottomMessage);
-//        EditText name = findViewById(R.id.name);
-//
-//        String displayMessage = "Thank You " + name.getText() + "\n" + "for using the app." + "\n" + "Udacity: Students First";
-//
-//        info.setText(displayMessage);
-//    }
+    public void customMessage(){
+        TextView info = findViewById(R.id.bottomMessage);
+       EditText Name = findViewById(R.id.name);
+
+       String displayMessage = "Thank You " + Name.getText() + "\n" + "for using the app." + "\n" + "Udacity: Students First";
+
+        info.setText(displayMessage);
+    }
 
     /**
      * This method is called when the share button is clicked
@@ -742,7 +719,6 @@ public class MainActivity extends AppCompatActivity {
     public void resetQuiz(View view) {
         RadioGroup radioGroup1 = findViewById(R.id.radioGroup1);
         RadioGroup radioGroup2 = findViewById(R.id.radioGroup2);
-        RadioGroup radioGroup3 = findViewById(R.id.radioGroup3);
         RadioGroup radioGroup4 = findViewById(R.id.radioGroup4);
         RadioGroup radioGroup5 = findViewById(R.id.radioGroup5);
         RadioGroup radioGroup6 = findViewById(R.id.radioGroup6);
@@ -750,6 +726,11 @@ public class MainActivity extends AppCompatActivity {
         RadioGroup radioGroup8 = findViewById(R.id.radioGroup8);
         RadioGroup radioGroup9 = findViewById(R.id.radioGroup9);
         RadioGroup radioGroup10 = findViewById(R.id.radioGroup10);
+
+        CheckBox check1 = findViewById(R.id.check1);
+        CheckBox check2 = findViewById(R.id.check2);
+        CheckBox check3 = findViewById(R.id.check3);
+        CheckBox check4 = findViewById(R.id.check4);
 
         TextView result = findViewById(R.id.resultsDisplay);
 
@@ -761,7 +742,7 @@ public class MainActivity extends AppCompatActivity {
         result.setText("");
         finalImage.setImageResource(0);
 
-        //Reset Checked Buttons
+        //Reset Checked Buttons and Re-enable
         radioGroup1.clearCheck();
         for (int i = 0; i < radioGroup1.getChildCount(); i++) {
             radioGroup1.getChildAt(i).setEnabled(true);
@@ -772,10 +753,6 @@ public class MainActivity extends AppCompatActivity {
             radioGroup2.getChildAt(i).setEnabled(true);
         }
 
-        radioGroup3.clearCheck();
-        for (int i = 0; i < radioGroup3.getChildCount(); i++) {
-            radioGroup3.getChildAt(i).setEnabled(true);
-        }
 
         radioGroup4.clearCheck();
         for (int i = 0; i < radioGroup4.getChildCount(); i++) {
@@ -810,5 +787,29 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < radioGroup10.getChildCount(); i++) {
             radioGroup10.getChildAt(i).setEnabled(true);
         }
+
+
+        //Reset The Checked CheckBoxes
+
+        if(check1.isChecked()){
+            check1.setChecked(false);
+        }
+
+        if(check2.isChecked()){
+            check2.setChecked(false);
+        }
+
+        if(check3.isChecked()){
+            check3.setChecked(false);
+        }
+
+        if(check4.isChecked()){
+            check4.setChecked(false);
+        }
+
+        check1.setEnabled(true);
+        check2.setEnabled(true);
+        check3.setEnabled(true);
+        check4.setEnabled(true);
     }
 }
