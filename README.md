@@ -2,6 +2,9 @@
 
 An educational app created as an exam for the completion of the Udacity Badic Android Course.
 
+'''
+The app is a simple questionare for beginners into the Computer World
+
 # Getting Started
 The whole code is posted here and can be viewed
 
