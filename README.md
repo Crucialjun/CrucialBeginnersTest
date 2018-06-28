@@ -14,6 +14,9 @@ The app is a simple questionare for beginners into the Computer World
 # Getting Started
 The whole code is posted here and can be viewed
 
+**Link to app download **
+https://drive.google.com/open?id=1PAd2jYLx-8WUYlgBS-7ph6oZiin5lVP-
+
 # Prequisites
 Android Device with least Android JellyBean Version of Android
 
