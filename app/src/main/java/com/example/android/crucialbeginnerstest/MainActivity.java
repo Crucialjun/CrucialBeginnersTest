@@ -737,6 +737,9 @@ public class MainActivity extends AppCompatActivity {
 
         EditText answer10 = findViewById(R.id.answer10);
 
+        EditText name = findViewById(R.id.name);
+
         answer10.setText("");
+        name.setText("");
     }
 }
