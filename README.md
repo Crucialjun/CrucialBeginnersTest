@@ -5,10 +5,9 @@ An educational app created as an exam for the completion of the Udacity Badic An
 '''
 The app is a simple questionare for beginners into the Computer World
 
-![Screenshot 1](https://i.imgur.com/gLlfK1n.jpg)
-![Screenshot 2](https://i.imgur.com/dPgYRQq.jpg)
-![Screenshot 3](https://i.imgur.com/EfGgfvw.jpg))
-![Screenshot 4](https://i.imgur.com/WTqK9pr.jpg)
+![Screenshot 1](https://github.com/Crucialjun/CrucialBeginnersTest/blob/master/Screenshot_20180629-230539.png)
+![Screenshot 2](https://github.com/Crucialjun/CrucialBeginnersTest/blob/master/Screenshot_20180629-230559.png)
+![Screenshot 3](https://github.com/Crucialjun/CrucialBeginnersTest/blob/master/Screenshot_20180629-230627.png))
 
 
 # Getting Started
