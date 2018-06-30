@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Crucial Beginners Test</string>
+    <string name="heading">"Quiz informatique pour débutants "</string>
+    <string name="udacitylogo">Logo Udacity</string>
+    <string name="instructions">"Veuillez répondre à toutes les questions suivantes "</string>
+    <string name="question_1">"1. Le système d'exploitation est un: "</string>
+    <string name="question_2">2. Les fichiers sont organisés dans:</string>
+    <string name="question_3">3. Le matériel informatique est:</string>
+    <string name="question_4">4. Deux types de réseaux sont:</string>
+    <string name="question_5">5. Le bureau de Windows est:</string>
+    <string name="question_6">6. Un graphiste utiliserait:</string>
+    <string name="question_7">7. Sauvegarde des données informatiques est le processus de:</string>
+    <string name="question_8">"8. Le processus d'exécution d'une commande s'appelle: "</string>
+    <string name="question_9">9. Une base de données est utilisée pour:</string>
+    <string name="question_10">" 10. Le cours ALC - Udacity est sponsorisé par?"</string>
+    <string name="answer1A">A. Logiciel système</string>
+</resources>

@@ -58,7 +58,8 @@
                     android:textAlignment="center"
                     android:textColor="@color/colorAccent"
 
-                    />
+                    android:importantForAutofill="no"
+                    tools:targetApi="o" />
 
             </LinearLayout>
 
@@ -719,7 +720,9 @@
                     android:hint="@string/answer10Hint"
                     android:imeOptions="actionDone"
                     android:inputType="textNoSuggestions"
-                    android:singleLine="true" />
+                    android:importantForAutofill="no"
+                    android:singleLine="true"
+                    tools:targetApi="o" />
             </LinearLayout>
 
 
