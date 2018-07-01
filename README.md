@@ -13,7 +13,7 @@ The app is a simple questionnaire for beginners into the Computer World
 # Getting Started
 The whole code is posted here and can be viewed
 
-**Link to app download **
+# Link to Apk
 https://drive.google.com/open?id=1MpMe5PuGdu4PRGzCFPFTmchJhvzPIISr
 
 # Prerequisites
@@ -27,7 +27,10 @@ Android Device with least Android JellyBean Version of Android
 * Crucialjun
 
 
+
 # Acknowledgments
+I grateful for the chance offered to me by Alc, Udacity and Google to learn code. This is my first fully functioning app and thanks for all the others to come 
 * ALC
 * Udacity
+* Google
 
