@@ -55,5 +55,9 @@
     <string name="submit">Submit</string>
     <string name="reset">Reset</string>
     <string name="share">Share Results</string>
+    <string name="correct">Correct Answer</string>
+    <string name="wrong">Wrong Answer The Correct answer is  </string>
+    <string name="allTheAbove">All the above</string>
+    <string name="almost">Almost There </string>
 
 </resources>
