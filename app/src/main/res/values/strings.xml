@@ -59,5 +59,6 @@
     <string name="wrong">Wrong Answer The Correct answer is  </string>
     <string name="allTheAbove">All the above</string>
     <string name="almost">Almost There </string>
+    <string name="entername">Please Enter your name above</string>
 
 </resources>

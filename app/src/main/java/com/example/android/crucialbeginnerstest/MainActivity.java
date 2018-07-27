@@ -375,30 +375,41 @@ public class MainActivity extends AppCompatActivity {
 
         TextView result = findViewById(R.id.resultsDisplay);
 
+
         ImageView finalImage = findViewById(R.id.finalImage);
 
 
-        if (answer10.getText().toString().equals("Google")) {
-            score = score + 1;
-        }
+        if (name.getText().toString().equals("")) {
 
-
-        String messageWin = "Dear " + name.getText() + "\n" + " Congratulation your final score is :" + score;
-
-        String messageLost = "Dear " + name.getText() + "\n" + " Sorry your final score is :" + score;
-
-
-        if (score < 5) {
-            finalImage.setImageDrawable((getResources().getDrawable(R.drawable.sad)));
-            result.setText(messageLost);
-
-            customMessage();
+            Toast enterName = Toast.makeText(this, this.getString(R.string.entername), Toast.LENGTH_LONG);
+            enterName.show();
 
         } else {
-            finalImage.setImageDrawable((getResources().getDrawable(R.drawable.congratulation)));
-            result.setText(messageWin);
 
-            customMessage();
+
+            if (answer10.getText().toString().equals("Google")) {
+                score = score + 1;
+            }
+
+
+            String messageWin = "Dear " + name.getText() + "\n" + " Congratulation your final score is :" + score;
+
+            String messageLost = "Dear " + name.getText() + "\n" + " Sorry your final score is :" + score;
+
+
+            if (score < 5) {
+                finalImage.setImageDrawable((getResources().getDrawable(R.drawable.sad)));
+                result.setText(messageLost);
+
+                customMessage();
+
+            } else {
+                finalImage.setImageDrawable((getResources().getDrawable(R.drawable.congratulation)));
+                result.setText(messageWin);
+
+                customMessage();
+            }
+
         }
 
 
@@ -458,6 +469,7 @@ public class MainActivity extends AppCompatActivity {
         TextView result = findViewById(R.id.resultsDisplay);
 
         ImageView finalImage = findViewById(R.id.finalImage);
+
 
         //Reset Score back to 0
         score = 0;

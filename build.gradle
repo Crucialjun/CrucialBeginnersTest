@@ -7,7 +7,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.3.0-alpha01'
+        classpath 'com.android.tools.build:gradle:3.3.0-alpha03'
         classpath 'de.ito.gradle.plugin:android-string-extractor:0.1.0'
 
 
