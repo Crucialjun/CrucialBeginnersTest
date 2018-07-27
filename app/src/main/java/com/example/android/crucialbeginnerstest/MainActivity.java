@@ -394,7 +394,7 @@ public class MainActivity extends AppCompatActivity {
 
             String messageWin = "Dear " + name.getText() + "\n" + " Congratulation your final score is :" + score;
 
-            String messageLost = "Dear " + name.getText() + "\n" + " Sorry your final score is :" + score;
+            String messageLost = "Dear " + name.getText() + "\n" + " Sorry your final score is : " + score;
 
 
             if (score < 5) {
