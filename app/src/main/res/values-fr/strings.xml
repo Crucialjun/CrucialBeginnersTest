@@ -60,4 +60,5 @@
     <string name="wrong">Mauvaise réponse La bonne réponse est</string>
     <string name="allTheAbove">Tout ce qui précède</string>
     <string name="almost">Presque là</string>
+    <string name="entername">S\'il vous plaît Entrez votre nom ci-dessus</string>
 </resources>

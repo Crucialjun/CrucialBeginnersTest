@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Crucial Beginners Test</string>
-    <string name="heading">Beginners Computer Quiz</string>
     <string name="udacitylogo">Udacity logo</string>
     <string name="instructions">Please answer all of the following questions</string>
     <string name="question_1">1. The Operating System is a :</string>

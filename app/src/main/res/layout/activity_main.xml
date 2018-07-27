@@ -42,10 +42,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
-                    android:text="@string/heading"
+                    android:text="@string/app_name"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
                     android:textSize="20sp"
+                    android:textAllCaps="true"
                     android:textStyle="bold" />
 
                 <EditText
@@ -170,6 +171,7 @@
                     android:layout_marginBottom="8dp"
                     android:text="@string/question_2"
                     android:textSize="16sp"
+                    android:textColor="@android:color/black"
                     android:textStyle="bold" />
 
                 <RadioGroup
@@ -238,6 +240,7 @@
                     android:layout_marginBottom="8dp"
                     android:text="@string/question_3"
                     android:textSize="16sp"
+                    android:textColor="@android:color/black"
                     android:textStyle="bold" />
 
                 <CheckBox
@@ -303,6 +306,7 @@
                     android:layout_marginBottom="8dp"
                     android:text="@string/question_4"
                     android:textSize="16sp"
+                    android:textColor="@android:color/black"
                     android:textStyle="bold" />
 
                 <RadioGroup
@@ -371,6 +375,7 @@
                     android:layout_marginBottom="8dp"
                     android:text="@string/question_5"
                     android:textSize="16sp"
+                    android:textColor="@android:color/black"
                     android:textStyle="bold" />
 
                 <RadioGroup
@@ -439,6 +444,7 @@
                     android:layout_marginBottom="8dp"
                     android:text="@string/question_6"
                     android:textSize="16sp"
+                    android:textColor="@android:color/black"
                     android:textStyle="bold" />
 
                 <RadioGroup
